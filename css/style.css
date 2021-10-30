@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+/* ..navigation... */
+span ,.nav{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav .logo ,strong{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    font-size: o.5rem;
+}
+.nav .nav-bar  .color{
+    color: blue;
+    font-size: 1.5rem;
+}
+.nav .nav-bar .nav-link{
+    margin-left: 3rem;
+}
+.nav  .nav-link:hover{
+    color: blue;
+    font-size: 1.2rem;
+}
+.nav .nav-bar .login:hover{
+    height: 1rem;
+    background: blue;
+    color: #fff;
+}
+.nav .search{
+    display: flex;
+}
+.nav .search-bar{
+    width: 600px;
+    background: #eee;
+    padding:  0.5rem 20px;
+    border-radius: 8rem 0 0 8rem;
+    outline: none;
+    box-sizing: border-box;
+} 
+.nav .search-icon,.fa-search{
+    width: 50px;
+    font-size: 20px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 132, 255);
+    border-radius: 0 8rem 8rem 0;
+}
+
+ /* .......section home....... */
+ .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/banner-home1.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+}
+.content{
+    text-align: center;
+}
+.home .content h3{
+   font-size: 3rem;
+   display: flex;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+}
+.home .content .btn{
+    width: 10rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(0, 4, 255);
+    color: #fff;
+    cursor: pointer;
+}
+/* ..section items.. */
+section{
+    display: flex;
+}
+.card{
+    width: 48%;
+    margin: 10px;
+    padding: 1rem;
+}
+.card .image{
+    background-color: #eee;
+    border-radius: 1rem 1rem 0 0;
+}
+.card .card-body{
+    background: #eee;
+    padding: 1rem;
+}
+.card .card-body p{
+    margin-top: 1.5rem;
+}
+.card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    border-radius: 0 0 1rem 1rem;
+}
+.card .card-footer .star{
+    color: blue;
+    padding: 1rem;
+}
+
+/* container */
+.container{
+    width: 80%;
+    margin: 1rem auto;
+}
+.long-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.long-card:hover{
+    box-shadow: 1px 6px 4px 8px orange;
+}
+button{
+    width: 30%;
+    height: 5vh;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(32, 154, 255);
+}
+
+/* box */
+.box-container1{
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'box1 box2 box2' 'box1 box2 box2' 'box1 box3 box3';
+    width: 90%;
+    background: #eee;
+}
+.box-container2{
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'box4 box4 box6' 'box4 box4 box6' 'box5 box5 box6';
+    width: 90%;
+    background: #eee;
+}
+.box-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container div strong{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+.box1{
+    height: 80vh;
+    grid-area: box1;
+    background-image: url(../images/frig-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -13rem;
+}
+.box2{
+    height: 40vh;
+    grid-area: box2;
+    background-image: url(../images/stove.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3{
+    grid-area: box3;
+    height: 40vh;
+    background-image: url(../images/kitchen.jpg);
+    background-position: center;
+}
+.box4{
+    grid-area: box4;
+    height: 40vh;
+    background-image: url(../images/banner-clothes1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box5{
+    grid-area: box5;
+    height: 40vh;
+    background-image: url(../images/banner-clothes2.jpg);
+    background-size: cover;
+}
+.box6{
+    height: 80vh;
+    grid-area: box6;
+    background-image: url(../images/banner-clothes3.jpg);
+    background-size: cover;
+}
+/* row col */
+.row{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    background: #ddd;
+    margin: 3rem auto;
+    text-align: center;
+
+}
+.row:hover{
+    box-shadow: -22px 13px 18px -2px rgba(0,0,0,0.62);
+}
+.col4{
+    width: 40%;
+    background: #fff;
+}
+.col8{
+    background: rgb(223, 219, 219);
+    width: 60%;
+}
+.mt{
+    padding: 1rem;
+}
+
+
+
+/* form login */
+.forms{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 158, 250, 0.993);
+}
+.form-group{
+    padding: 10px;
+}
+.form-control{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+::placeholder{
+    font-weight: bold;
+}
+.btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: rgba(0, 109, 252, 0.329);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.logo-login{
+    background: rgb(185, 180, 180);margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 5rem;
+    color: #eee;
+}
+.two-input{
+    display: flex;
+}
+.ml{
+    margin-left: 5px;
+}
+.no-resize{
+    resize: none;
+}
+/* ......footer..... */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(1, 132, 255);
+    margin-top: 2rem;
+}
+.nav-footer{
+    margin-top: 2rem;
+}
+.nav-footer a:hover{
+    color: #fff;
+}
+.nav-footer a{
+    display: block;
+    text-align: left;
+    color: #000;
+    padding: 0.2rem;
+    
+}
+.nav-footer .icon-contact{
+    display: block;
+    text-align: center;
+    padding: 0.2rem;
+}
